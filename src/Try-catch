@@ -18,7 +18,7 @@ const MyComponent = () => {
 
   return (
     <div>
-      {error ? <ErrorScreen errorMessage={error} /> : null}
+      {error ? <ErrorScreen errorMessage={Página não encontrada!} /> : null}
     </div>
   );
 };
