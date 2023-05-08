@@ -1,0 +1,12 @@
+import React from 'react';
+
+const ErrorScreen = ({ errorMessage }) => {
+  return (
+    <div>
+      <h1>Oops, algo deu errado!</h1>
+      <p>{errorMessage}</p>
+    </div>
+  );
+};
+
+export default ErrorScreen;
