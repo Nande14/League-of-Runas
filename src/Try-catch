@@ -1,0 +1,26 @@
+import React, { useState } from 'react';
+import ErrorScreen from './ErrorScreen';
+
+const MyComponent = () => {
+  const [error, setError] = useState(null);
+
+  try {
+    // Código que pode gerar uma exceção
+    return (
+      <div>
+        <h1>Conteúdo principal</h1>
+      </div>
+    );
+  } catch (e) {
+    setError(e.message);
+    return null;
+  }
+
+  return (
+    <div>
+      {error ? <ErrorScreen errorMessage={error} /> : null}
+    </div>
+  );
+};
+
+export default MyComponent;
