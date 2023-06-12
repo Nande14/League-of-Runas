@@ -1,4 +1,4 @@
-import styles from './Home.module.css'
+import styles from './Home.modules.css'
 import tela from '../../img/TelaHome.png'
 function Home(){
 return(
