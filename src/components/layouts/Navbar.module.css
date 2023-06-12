@@ -5,7 +5,9 @@
     padding-bottom: 20px;
     margin-right: 220px;
 }
-
+.navbar ul li {
+    padding: .5rem;
+}
 .list{
     display: flex;
     list-style: none;
@@ -13,18 +15,16 @@
 }
 
 .item{
-
     margin-right: 1em;
 }
 
-.item a {
-
+.item ul li a {
     color: #ffc107;
-   
     text-decoration: none;
 }
-
-.item a:hover {
-       
+a:link{
+    color:#ffc107;
+}
+.item ul li a:hover {
     color: #FFF;      
 }
